@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <title>Опросник</title>
     <script src="https://use.fontawesome.com/4c66f9c18a.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header id="header">
         <div id="logo" class="lr15 col16">
-            <a href="/">ОПРОСНИК</a>
+            <a href="/">В ОПРОСЕ</a>
         </div>
-        <div id="menu" class="lr15 main66">
+        <div id="menu" class="lr15 col66">
             <div class="search_wrapper">
                 <form id="header_search" action="/" method="GET">
                     <input type="text" placeholder="Поиск">
@@ -24,7 +24,7 @@
                     <li class="menu_item"><a href="/">Главная</a></li>
                     <li class="menu_item menu_submenu_item">
                         <a href="/">О нас</a>
-            <i class="fa fa-chevron-circle-down"></i>
+                        <i class="fa fa-chevron-circle-down"></i>
                         <ul class="submenu">
                             <li class="menu_item"><a href="">Пользователи</a></li>
                             <li class="menu_item"><a href="">Список вопросов</a></li>
@@ -39,7 +39,7 @@
             <a class="login_url" href="/" title="Войти или зарегестрироваться">Войти или зарегестрироваться</a>
         </div>
     </header>
-    <div class="fl w100" id="header_sidebar"></div>
+    <div class="fl col100" id="header_sidebar"></div>
     <div class="left_sidebar col16 fl">
         <ul>
             <li class="widget widget_btn">
@@ -63,12 +63,12 @@
             <a href="http://qaengine.enginethemes.com/term/">Terms &amp; Privacy</a>
         </div>
     </div>
-    <div class="main_content main66 fl">
+    <div class="main_content col66 fl">
         <div class="row category">
-            <div class="current_category w50 fl lr15">
+            <div class="current_category col50 fl lr15">
                 <h1>Все опросы</h1>
             </div>
-            <div class="filter filter_category lr15 w50 fl">
+            <div class="filter filter_category lr15 col50 fl">
                 <div class="filter_outer_wrap">
                     <label>
                         <span>Выбрать категорию</span>
@@ -81,14 +81,139 @@
                 </div>
             </div>
         </div>
+        <div class="row poll_filter lr15" id="poll_filter">
+            <div class="sort_polls col50 fl">
+                <ul>
+                    <li><a href="" class="active">Последние</a></li>
+                    <li><a href="">Топ</a></li>
+                    <li><a href="">Свежие</a></li>
+                </ul>
+            </div>
+            <div class="pagination_polls col50 fl">
+                <div class="pagination_wrapper">
+                    <label>
+                        Опросов на странице:
+                        <select name="page_polls" id="page_in_polls">
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                            <option value="ALL">Все</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="main_polls_list">
+            <ul id="polls_list">
+                <li class="poll_item">
+                    <div class="p_left_content col66 fl">
+                        <h2 class="poll_name"><a href="" class="poll_title">Че каво?</a></h2>
+                        <div class="p_content">
+                            <div class="poll_text"><p>Всем привет. Че каво?</p></div>
+                            <div class="poll_cat">
+                                <ul class="p_tags"></ul>
+                                <div class="clearfix">
+                                    <a href="" class="p_author">
+                                        <span class="author_avatar"><img class="avatar" src="http://vignette2.wikia.nocookie.net/videogamefanon/images/0/01/1719749-grafics_cat_avatar_size_large.jpg/revision/latest?cb=20110428093951c" alt="CAT"></span>
+                                        <span class="author_name">Адмен</span>
+                                    </a>
+                                    <span class="user_badge" style="background-color:#780978;">Администратор</span>
+                                    <span datetime="on September 17, 2016" class="question_time">Создан 17 Сентября 2016 года в категории</span>
+                                    <span class="poll_category">
+                                        <a href="">Музыка</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p_right_content col33 fl">
+                        <ul class="poll_statistic">
+                            <li><span class="poll_views">54</span>views</li>
+                            <li><span class="poll_votes">1</span>votes</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="poll_item">
+                    <div class="p_left_content col66 fl">
+                        <h2 class="poll_name"><a href="" class="poll_title">Че каво?</a></h2>
+                        <div class="p_content">
+                            <div class="poll_text"><p>Всем привет. Че каво?</p></div>
+                            <div class="poll_cat">
+                                <ul class="p_tags"></ul>
+                                <div class="clearfix">
+                                    <a href="" class="p_author">
+                                        <span class="author_avatar"><img class="avatar" src="http://vignette2.wikia.nocookie.net/videogamefanon/images/0/01/1719749-grafics_cat_avatar_size_large.jpg/revision/latest?cb=20110428093951c" alt="CAT"></span>
+                                        <span class="author_name">Адмен</span>
+                                    </a>
+                                    <span class="user_badge" style="background-color:#780978;">Администратор</span>
+                                    <span datetime="on September 17, 2016" class="question_time">Создан 17 Сентября 2016 года в категории</span>
+                                    <span class="poll_category">
+                                        <a href="">Музыка</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p_right_content col33 fl">
+                        <ul class="poll_statistic">
+                            <li><span class="poll_views">54</span>views</li>
+                            <li><span class="poll_votes">1</span>votes</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="poll_item">
+                    <div class="p_left_content col66 fl">
+                        <h2 class="poll_name"><a href="" class="poll_title">Че каво?</a></h2>
+                        <div class="p_content">
+                            <div class="poll_text"><p>Всем привет. Че каво?</p></div>
+                            <div class="poll_cat">
+                                <ul class="p_tags"></ul>
+                                <div class="clearfix">
+                                    <a href="" class="p_author">
+                                        <span class="author_avatar"><img class="avatar" src="http://vignette2.wikia.nocookie.net/videogamefanon/images/0/01/1719749-grafics_cat_avatar_size_large.jpg/revision/latest?cb=20110428093951c" alt="CAT"></span>
+                                        <span class="author_name">Адмен</span>
+                                    </a>
+                                    <span class="user_badge" style="background-color:#780978;">Администратор</span>
+                                    <span datetime="on September 17, 2016" class="question_time">Создан 17 Сентября 2016 года в категории</span>
+                                    <span class="poll_category">
+                                        <a href="">Музыка</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p_right_content col33 fl">
+                        <ul class="poll_statistic">
+                            <li><span class="poll_views">54</span>views</li>
+                            <li><span class="poll_votes">1</span>votes</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="right_sidebar col16 fl">
-        <ul class="menu right_menu">
-            <li class="widget questions-count"></li>
-            <li class="widget"></li>
-            <li class="widget"></li>
-            <li class="widget"></li>
-            <li class="widget"></li>
+        <ul>
+            <li class="widget widget_statistic">
+                <ul>
+                    <li class="polls_count"><p>Опросов</p><p><span>18</span></p></li>
+                    <li class="members_count"><p>Пользователей</p><p><span>9</span></p></li>
+                </ul>
+            </li>
+            <li class="widget widget_related_tags">
+                <h3>Самые популярные теги</h3>
+                <ul>
+                    <li><a class="q_tag" href="">business</a> x 6 </li>
+                    <li><a class="q_tag" href="">technology</a> x 5 </li>
+                    <li><a class="q_tag" href="">marketing</a> x 5 </li>
+                    <li><a class="q_tag" href="">google</a> x 4 </li>
+                    <li><a class="q_tag" href="">apps</a> x 4 </li>
+                    <li><a class="q_tag" href="">billionaire</a> x 3 </li>
+                    <li><a class="q_tag" href="">movie</a> x 2 </li>
+                    <li><a class="q_tag" href="">glass</a> x 2 </li>
+                </ul>
+                <a href="">все теги</a>
+            </li>
+            <li class="widget widget-hot-questions"></li>
         </ul>
     </div>
 </body>
